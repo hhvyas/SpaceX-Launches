@@ -1,38 +1,211 @@
-.App {
-  text-align: center;
+html{
+  margin: 0;
+  padding: 0;
+  background-color:rgba(169, 169, 169, 0.5);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 1000px) {
+  .heading {
+    font-size: 1.5rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 3% auto;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  .Cards{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .Left_card {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .selected{
+    background-color: rgba(41, 187, 22, 1);
+  }
+  .cont_left {
+    width: 30%;
+    padding: 3%;
+    background-color: white;
+    border-radius: 2%;
+  }
+  .filter {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bolder;
+  }
+.filter_attributes{
+  margin: 10%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-bottom: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.button_list {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin: 10% 0 10% 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  padding: 2% 20%;
+  border: none;
+  border-radius: 10%;
+  background-color: rgba(41, 187, 22, 0.3);
+  cursor: pointer;
+  margin: 10% 0;
+}
+
+.Right_card {
+ /* width: 40%;*/
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-around;
+}
+.return_right_card{
+  display: grid;
+  justify-content: center;
+  border-bottom: 1px solid black; 
+  margin: 10px 0;
+  padding-bottom: 10px;
+}
+img{
+  width: 180px;
+  height: 180px;
+}
+
+.mission_name {
+  color: #6b75a0;
+  font-weight: bold;
+  margin: 4% 0;
+}
+.mission_id_name {
+  font-weight: bold;
+}
+span{
+  font-weight: bold;
+}
+
+
+}
+
+@media only screen and (min-width: 1000px) {
+body{
+  margin: 2%;
+}
+
+.heading{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5%;
+}
+
+.filter{
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.Cards {
+  display: flex;
+  width: 100%;
+}
+
+.Left_card {
+  width: 15%;
+  background-color: white;
+  height: 500px;
+}
+
+
+.filter_attributes {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid gray;
+  font-size: 0.8rem;
+  margin: 5%;
+}
+
+.filter {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin: 4%;
+}
+
+.button_list {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+button{
+  padding: 2% 20% 2% 20%;
+  border: none;
+  border-radius: 10%;
+  background-color: rgba(41, 187, 22, 0.3);
+  cursor: pointer;
+} 
+.selected{
+  background-color: rgba(41, 187, 22, 0.6);  
+}
+.button_name{
+  display: flex;
+  justify-content: center;
+  margin: 6% 2%;
+}
+.Right_card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.return_right_card {
+  margin: 0 4% 4% 4%;
+  background-color: white;
+  padding-bottom: 8%;
+
+}
+
+.mission_pic {
+  background-color: rgba(169, 169, 169, 0.5);
+  display: flex;
+  justify-content: center;
+  margin: 4%;
+}
+
+img{
+  max-width: 100%;
+}
+.mission_info{
+  margin: 0 4%;
+}
+
+.mission_name {
+  color: #6b75a0;
+  font-weight: bold;
+  margin: 4% 0;
+}
+
+.mission_id_name {
+  font-weight: bold;
+}
+span{
+  font-weight: bold;
+}
+.Loading{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 }
